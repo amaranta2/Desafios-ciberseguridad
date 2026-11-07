@@ -9,24 +9,15 @@ credenciales que viajan por la red.
    (`Codigo_levantar_http_local.py`, escucha en `127.0.0.1:8090`). Antes de
    ejecutarlo revisé el código: solo usa `http.server` y `urllib.parse`, escucha
    únicamente en loopback y no ejecuta comandos ni se conecta a internet.
-2. **Error:** `python Codigo_levantar_http_local.py` devolvió
-   `[Errno 2] No such file or directory`, porque la terminal estaba en
-   `C:\Users\amivi` y el archivo estaba en Descargas.
-   **Solución:** moverme a la carpeta con `cd $HOME\Downloads` y ejecutar
-   `python .\Codigo_levantar_http_local.py`.
-3. **Detalle importante:** el servidor corre en `127.0.0.1` (loopback), así que
+2. **Detalle importante:** el servidor corre en `127.0.0.1` (loopback), así que
    capturar en la tarjeta de red activa (Wi-Fi/Ethernet), como dice el
    enunciado, no habría mostrado nada.
    **Solución:** iniciar la captura en la interfaz
    **Adapter for loopback traffic capture** (viene con Npcap).
-4. Entré a `http://127.0.0.1:8090` desde el navegador e inicié sesión con datos
+3. Entré a `http://127.0.0.1:8090` desde el navegador e inicié sesión con datos
    inventados (`jsknkds` / `skjdnjskd`). Luego detuve la captura.
-5. Apliqué el filtro `http.request.method == "POST"` y quedaron aislados los
+4. Apliqué el filtro `http.request.method == "POST"` y quedaron aislados los
    paquetes del login (80 y 122).
-6. **Dificultad:** no encontraba dónde ver las capas del paquete. **Solución:**
-   doble clic sobre el paquete 80 para abrirlo en una ventana con todas las
-   capas desplegables, y clic derecho → *Seguir → Flujo TCP* para ver la
-   petición completa.
 
 ## Resultados
 
