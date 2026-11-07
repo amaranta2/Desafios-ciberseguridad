@@ -41,11 +41,11 @@ Como origen y destino son la misma IP (tráfico local), lo que distingue al
 cliente del servidor son los puertos: 62035 → 8090.
 
 ## Evidencias
-- Filtro aplicado: ![filtro](evidencias/filtro_post.png)
-- Capa IP del paquete 80: ![ip](evidencias/ip_paquete80.png)
-- Credenciales en el formulario: ![form](evidencias/form_urlencoded.png)
-- Flujo TCP: ![flujo](evidencias/flujo_tcp.png)
-- Consola del servidor con el `[LOGIN]`: ![consola](evidencias/consola_servidor.png)
+- Filtro aplicado: ![filtro](filtro_post.png)
+- Capa IP del paquete 80: ![ip](ip_paquete80.png)
+- Credenciales en el formulario: ![form](form_urlencoded.png)
+- Flujo TCP: ![flujo](flujo_tcp.png)
+- Consola del servidor con el `[LOGIN]`: ![consola](consola_servidor.png)
 
 ## Apoyo de IA
 Usé Claude (Anthropic) con estas consultas:
