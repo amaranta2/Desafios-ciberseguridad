@@ -68,7 +68,6 @@ una política de contraseñas conocida, sin usar diccionario.
 - Extracción del hash con `zip2john`.
 - Captura con `Panda123` y "Session completed" de John.
 - Estado de Hashcat con velocidad ~915 H/s y estimado de 1 año (1 núcleo).
-- Estado de Hashcat tras `-O -w 3`, ~924 H/s.
 - Estado de Hashcat con 4 núcleos, ~1334 H/s, estimado 268 días.
 - Configuración de CPUs de la VM en VirtualBox.
 
