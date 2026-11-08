@@ -21,7 +21,7 @@ ejercicio.
    docker compose up --build -d
    docker compose ps
    ```
-4. Entré a `http://localhost:8080`: cargó el sitio "SQ Injection Studies"
+4. Entré a `http://127.0.0.1:8080`: cargó el sitio "SQ Injection Studies"
    con los capítulos **01 El catálogo** y **02 El acceso**.
 
 ### Nivel 1 — El catálogo
